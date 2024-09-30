@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkSheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GENERATE MARKSHEET</h1>
+        <form action="">
+            <div class="row">
+                <input type="text" id="studentName" placeholder="Enter Student Name" required>
+                <input type="text" id="fatherName" placeholder="Enter Father Name" required>
+            </div>
+            <div class="row">
+                <input type="text" id="rollNo" placeholder="Enter Roll No" required>
+                <input type="text" id="className" placeholder="Student Class Name" required>
+            </div>
+            <div class="row">
+                <input type="text" id="EnglishMarks" placeholder="Enter English Marks" required>
+                <input type="text" id="BiologyMarks" placeholder="Enter Biology Marks" required>
+                <input type="text" id="ChemistryMarks" placeholder="Enter Chemistry Marks" required>
+                <input type="text" id="PhysicsMarks" placeholder="Enter Physics Marks" required>
+                <input type="text" id="MathematicsMarks" placeholder="Enter Mathematics Marks" required>
+                <button type="button" onclick="generatemarksheet()">GENERATE</button>
+            </div>
+        </form>
+        <div id="markSheet" style="display: none;">
+            <h2>Mark Sheet</h2>
+            <table id="resultTable">
+                <tr>
+                    <th>English</th>
+                    <th>Biology</th>
+                    <th>Chemistry</th>
+                    <th>Physics</th>
+                    <th>Mathematics</th>
+                </tr>
+                <tr>
+                    <td id="EnglishResult"></td>
+                    <td id="BiologyResult"></td>
+                    <td id="ChemistryResult"></td>
+                    <td id="PhysicsResult"></td>
+                    <td id="MathematicsResult"></td>
+                </tr>  
+            </table>
+            <p>Total Marks: <span id="totalMarks"></span></p>
+            <p>Percentage : <span id="Percentage">%</span></p>
+            <p>Grade: <span id="Grade"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    width: 800px;
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: brown;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+button{
+    margin: 10px;
+    padding: 5px;
+    background-color: brown;
+    color: #ddd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+h2{
+    margin: 20px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+#marksheet{
+    border: 2px solid yellow;
+    padding: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 5px solid black;
+    padding: 20px;
+    text-align: center;
+}
